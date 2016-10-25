@@ -2,4 +2,4 @@
 
 #### Recursos a adicionar
 
-- Habilitar/desabilitar botão pesquisar
+:white_medium_square: Habilitar/desabilitar botão pesquisar
