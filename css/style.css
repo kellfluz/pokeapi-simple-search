@@ -1,3 +1,4 @@
+/*Reset CSS*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,6 +50,7 @@ table {
 	        box-sizing: border-box;
 }
 
+/*Config Basic's*/
 body {
     font-size: 62.5%;
 }
@@ -80,6 +82,7 @@ embed {
     max-width: 100%;
 }
 
+/*Content all*/
 .wrapper {
     max-width: 900px;
     height: 100%;
@@ -109,6 +112,7 @@ input[type="text"] {
 	border: 2px solid #1e275b;
 	font-size: 16px;
 }
+
 input[type="submit"] {
 	padding: 10px;
 	width: 400px;
@@ -120,6 +124,7 @@ input[type="submit"] {
 	border: 2px solid #1e275b;
 	font-size: 16px;
 	background: #fff;
+	cursor: pointer;
 }
 
 .search {
