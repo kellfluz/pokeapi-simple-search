@@ -3,25 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Procure informações de seu Pokémon favorito!</title>
-	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/reset.css">
 	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 </head>
 <body>
 	<div class="wrapper">
 		<header class="head">
 			<img src="img/logo.png" class="logo" alt="Logo pokemón busca">
-			<h1>Procure informações de seu Pokémon favorito!</h1>	
-		</header>
-		<div class="search">
+			<h1 class="primary-title">Procure informações de seu Pokémon favorito!</h1>	
+		</header><!--end header-->
+		<main>
+		<section class="search">
 			<form action="">
-				<input type="text" id="pesquisa" placeholder="Pesquise seu pokemón">
-				<input type="submit" id="btn" onsearch="display()" value="Buscar">
+				<input type="text" class="text-field" placeholder="Pesquise seu pokemón">
+				<input type="submit" class="primary-btn" value="Buscar">
 			</form>
-		</div><!--end search-->
-		<div class="results">
+		</section><!--end search-->
+		<section class="results">
+			
+		</section><!--end results-->
+		</main><!--end main-->
 
-		</div><!--end results-->
+		<footer>
+			<nav class="link-footer">
+				<ul>
+					<li><p>Desenvolvido com muito ♥ por <a href="http://github.com/DaniloAgostinho" target="_blank">Danilo Agostinho </a></p></li>
+					<li><p>Mentor do projeto <a href="https://github.com/WendellAdriel" target="_blank">Wendell Adriel</a></p></li>
+				</ul>
+		</nav>
+		</footer>
 	</div><!--end wrapper-->
 
 	<script src="js/script.js"></script>
