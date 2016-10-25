@@ -1,2 +1,5 @@
 # pokeapi-simple-search
-Projeto------
+
+#### Recursos a adicionar
+
+- Habilitar/desabilitar botão pesquisar
