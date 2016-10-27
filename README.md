@@ -14,9 +14,9 @@ Criar tarefa de habilitar botão de pesquisa ao digitar.
 
 :white_medium_square: Criar função para exibir as alterações;
 
-<blockout>
+<blockquote>
 	Tarefa concluída :heavy_check_mark:
-</blockout>	
+</blockquote>	
 
 #### 2ª Tarefa
 
