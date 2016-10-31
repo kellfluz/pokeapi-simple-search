@@ -1,0 +1,55 @@
+@media screen and (min-width: 0px) {
+	.logo {
+		max-width: 260px;
+	}
+
+	.text-field {
+		width: 100%;
+	}
+
+	.primary-btn {
+		width: 40%;
+		float: right;
+		margin-top: 10px;
+		position: relative;
+		z-index: 9999999;
+		bottom: 62px;
+	}
+
+	form {
+    	padding: 0px 9px;
+    }
+
+	footer p {
+    	font-size: 1.2em; 
+    	font-weight: bold;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.logo {
+		max-width: 300px;
+	}
+
+	.text-field {
+		width: 400px;
+	}
+
+	.primary-btn {
+		width: 30%;
+		float: right;
+		margin-top: 10px;
+		position: relative;
+		z-index: 9999999;
+		bottom: 62px;
+	}
+
+	form {
+    	padding: 0px 9px;
+    }
+
+	footer p {
+    	font-size: 1.2em; 
+    	font-weight: bold;
+	}
+}
