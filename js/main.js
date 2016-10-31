@@ -20,28 +20,15 @@
 
   }//end checkInput
 
-
-
   function restSearch() {
+    var restValue = searchInput.value.trim();
+    var urlRest = 'http://pokeapi.co/api/v2/pokemon/';
+    var result = urlRest += restValue;
+    alert(result);
     
-    var xhttp = new XMLHttpRequest();
-
-  xhttp.open("POST", "http://pokeapi.co/api/v2/pokemon/", true);
-  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  xhttp.send("name=" + searchPokemon);
-
-  console.log(xhttp);
-
-   
   }
 
-  function log(message) {
-    var searchPokemon = searchInput.value.trim();
-    var client = new XMLHttpRequest();
-    client.open("POST", "/log");
-    client.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
-    client.send();
-}
+
 
   //http://pokeapi.co/api/v2/pokemon/
 
