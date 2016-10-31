@@ -72,7 +72,7 @@ h1 {
 }
 
 h3 {
-	font-size: 3em;
+	font-size: 1.8em;
 	font-family: "Trebuchet Ms";
 }
 
@@ -86,4 +86,8 @@ img,
 video, 
 embed {
     max-width: 100%;
+}
+
+hr {
+    border: 1px dotted rgba(51, 51, 51, 0.16);
 }

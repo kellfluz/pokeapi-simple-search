@@ -41,6 +41,9 @@
           console.log("Habilidade → " + response.abilities[0].ability.name);
           console.log("Tipo → " + response.types[0].type.name);
           console.log("Movimento → " + response.moves[0].move.name);
+
+
+
       }
     }, false);
 
@@ -51,7 +54,6 @@
 
 
 
-  
 
 
 })();
