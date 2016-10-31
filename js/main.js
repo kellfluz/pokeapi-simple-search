@@ -10,7 +10,7 @@
   function checkInput() {
     var searchValue = searchInput.value.trim();
 
-    if (searchValue.length >= 4) {
+    if (searchValue.length >= 2) {
         btn.disabled = false;
         btn.style.background = "#1e275b";
         btn.style.color = "#fff";
@@ -24,8 +24,17 @@
     var restValue = searchInput.value.trim();
     var urlRest = 'http://pokeapi.co/api/v2/pokemon/';
     var result = urlRest += restValue;
-    alert(result);
-    
+
+    var restPokemon = new XMLHttpRequest();
+    restPokemon.open('GET', result, true);
+    restPokemon.send();
+    restPokemon.addEventListener('readystatechange', function(){
+      if (restPokemon.readyState === 4) {
+        var response = restPokemon.JSON.parse(restPokemon);
+        console.log(response); 
+      } 
+    }, false);
+     
   }
 
 
