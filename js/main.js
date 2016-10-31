@@ -16,7 +16,7 @@
         btn.style.color = "#fff";
     }
 
-    console.log(searchValue);
+    //console.log(searchValue);mostra a entrada que esta sendo digitada
 
   }//end checkInput
 
@@ -25,18 +25,24 @@
     var valorDigitadoBusca = searchInput.value.trim();
     var urlApi = 'http://pokeapi.co/api/v2/pokemon/';
     var resBusca = urlApi += valorDigitadoBusca;
-    console.log(resBusca);
 
     var requestApi = new XMLHttpRequest();
     requestApi.open('GET', resBusca, true);
     requestApi.send();
-    requestApi.addEventListener('onreadystatechange', function(){
-      if (requestApi.readystate === 4 && requestApi.status === 200) {
-        console.log(JSON.parse(requestApi.responseText));
-        console.log(requestApi.status);
+
+    requestApi.addEventListener('readystatechange', function(){
+      if (requestApi.readyState === 4 && requestApi.status === 200) {
+          var response = JSON.parse(requestApi.responseText);
+          console.log("Name → " + response.name);
+          console.log("ID → " + response.id);
+          console.log("Experiência → " + response.base_experience);
+          console.log("Height → " + response.height);
+          console.log("Weight → " + response.weight);
+          console.log("Habilidade → " + response.abilities[0].ability.name);
+          console.log("Tipo → " + response.types[0].type.name);
+          console.log("Movimento → " + response.moves[0].move.name);
       }
     }, false);
-    
 
   }
 
