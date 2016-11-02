@@ -19,11 +19,12 @@
 	}
 
 	.primary-btn {
-			width: 200px;
+			width: 110px;
 			display: block;
 			margin: 10px auto;
-			bottom: 156px;
-			right: 10px;
+			bottom: 62px;
+			left: 100px;
+			position: relative;
 	}
 
 	footer p {
@@ -32,7 +33,6 @@
 }
 
 }
-
 
 @media screen and (min-width: 520px) {
 	h1 {
