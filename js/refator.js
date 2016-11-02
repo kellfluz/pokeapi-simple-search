@@ -7,8 +7,13 @@
     searchField.addEventListener('input', validateField);
     button.addEventListener('click', function() {
         seekPokemon();
+        disabledButton();
         //outra função
     }, false);
+
+    function disabledButton() {
+      button.disabled = false;
+    }
 
     function validateField(e) {
       var enteredValue = searchField.value.trim();
