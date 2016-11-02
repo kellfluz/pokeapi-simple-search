@@ -1,6 +1,6 @@
  (function () {
   'use strict';
-  
+
   var searchInput = document.getElementById('search');
   var btn = document.getElementById('btn');
 
@@ -39,6 +39,10 @@
     requestApi.open('GET', resBusca, true);
     requestApi.send();
 
+    if (requestApi !== resBusca) {
+      alert('O pokemon não existe!');
+    }else {
+
     requestApi.onreadystatechange =  function(){
       if (requestApi.readyState === 4 && requestApi.status === 200) {
           var response = JSON.parse(requestApi.responseText);
@@ -54,13 +58,8 @@
       }
     }
 
+    }
+
   }
 
 })();
-
-
-
-
-
-
-
