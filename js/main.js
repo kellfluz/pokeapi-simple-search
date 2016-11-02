@@ -1,5 +1,5 @@
 (function() {
-    'use strick';
+    'use strict';
 
     var searchField = document.getElementById('search');
     var button = document.getElementById('btn');
@@ -7,6 +7,7 @@
     searchField.addEventListener('input', validateField);
     button.addEventListener('click', function() {
         seekPokemon();
+        desabilitarButton();
         //outra função
     }, false);
 
@@ -45,6 +46,11 @@
         }
 
       }
+    }
+
+    function desabilitarButton() {
+      button.disabled = true;
+      searchField.reset;
     }
 
 })();
