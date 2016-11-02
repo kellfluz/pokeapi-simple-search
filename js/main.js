@@ -34,14 +34,14 @@
         if (requestApi.readyState === 4 && requestApi.status === 200) {
 
           var response = JSON.parse(requestApi.responseText);
-          console.log("Name → " + response.name);
-          console.log("ID → " + response.id);
-          console.log("Experiência → " + response.base_experience);
-          console.log("Height → " + response.height);
-          console.log("Weight → " + response.weight);
-          console.log("Habilidade → " + response.abilities[0].ability.name);
-          console.log("Tipo → " + response.types[0].type.name);
-          console.log("Movimento → " + response.moves[0].move.name);
+          alert("Name → " + response.name);
+          alert("ID → " + response.id);
+          alert("Experiência → " + response.base_experience);
+          alert("Height → " + response.height);
+          alert("Weight → " + response.weight);
+          alert("Habilidade → " + response.abilities[0].ability.name);
+          alert("Tipo → " + response.types[0].type.name);
+          alert("Movimento → " + response.moves[0].move.name);
 
         }
 
