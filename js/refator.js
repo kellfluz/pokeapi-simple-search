@@ -22,12 +22,11 @@
 
     function seekPokemon() {
       var enteredValue = searchField.value.trim();
-      var urlApi = 'http://pokeapi.co/api/v2/pokemon/';
-      var resBusca = urlApi += enteredValue;
+      var urlApi = 'http://pokeapi.co/api/v2/pokemon/' + enteredValue;
 
       //rest API
       var requestApi = new XMLHttpRequest();
-      requestApi.open('GET', resBusca, true);
+      requestApi.open('GET', urlApi, true);
       requestApi.send();
 
       requestApi.onreadystatechange = function() {

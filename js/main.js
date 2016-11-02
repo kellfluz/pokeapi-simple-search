@@ -1,50 +1,37 @@
- (function () {
-  'use strict';
+(function() {
+    'use strick';
 
-  var searchInput = document.getElementById('search');
-  var btn = document.getElementById('btn');
+    var searchField = document.getElementById('search');
+    var button = document.getElementById('btn');
 
-  searchInput.addEventListener('input', checkInput);
+    searchField.addEventListener('input', validateField);
+    button.addEventListener('click', function() {
+        seekPokemon();
+        //outra função
+    }, false);
 
-  btn.addEventListener('click', function() {
-    resBusca();
-    desabilitaBotao();
-  });
+    function validateField(e) {
+      var enteredValue = searchField.value.trim();
 
-  function desabilitaBotao() {
-    btn.disabled = true;
-    console.log('desabilitar botão ao carregar clicar no btn');
-  }
-
-
-  function checkInput(e) {
-    var searchValue = searchInput.value.trim();
-
-    if (searchValue.length >= 2) {
-        btn.disabled = false;
-        btn.style.background = "#1e275b";
-        btn.style.color = "#fff";
+      if (enteredValue.length >= 2) {
+          button.disabled = false;
+          button.style.background = "#1e275b";
+          button.style.color = "#fff";
+      }
     }
 
-    console.log(searchValue);
+    function seekPokemon() {
+      var enteredValue = searchField.value.trim();
+      var urlApi = 'http://pokeapi.co/api/v2/pokemon/' + enteredValue;
 
-  }
+      //rest API
+      var requestApi = new XMLHttpRequest();
+      requestApi.open('GET', urlApi, true);
+      requestApi.send();
 
-  function resBusca() {
-    var valorDigitadoBusca = searchInput.value.trim();
-    var urlApi = 'http://pokeapi.co/api/v2/pokemon/';
-    var resBusca = urlApi += valorDigitadoBusca;
+      requestApi.onreadystatechange = function() {
+        if (requestApi.readyState === 4 && requestApi.status === 200) {
 
-    var requestApi = new XMLHttpRequest();
-    requestApi.open('GET', resBusca, true);
-    requestApi.send();
-
-    if (requestApi !== resBusca) {
-      alert('O pokemon não existe!');
-    }else {
-
-    requestApi.onreadystatechange =  function(){
-      if (requestApi.readyState === 4 && requestApi.status === 200) {
           var response = JSON.parse(requestApi.responseText);
           console.log("Name → " + response.name);
           console.log("ID → " + response.id);
@@ -55,11 +42,9 @@
           console.log("Tipo → " + response.types[0].type.name);
           console.log("Movimento → " + response.moves[0].move.name);
 
+        }
+
       }
     }
-
-    }
-
-  }
 
 })();
