@@ -32,6 +32,7 @@
 
       requestApi.onreadystatechange = function() {
         if (requestApi.readyState === 4 && requestApi.status === 200) {
+
           var response = JSON.parse(requestApi.responseText);
           console.log("Name → " + response.name);
           console.log("ID → " + response.id);
@@ -41,7 +42,9 @@
           console.log("Habilidade → " + response.abilities[0].ability.name);
           console.log("Tipo → " + response.types[0].type.name);
           console.log("Movimento → " + response.moves[0].move.name);
+
         }
+
       }
     }
 
