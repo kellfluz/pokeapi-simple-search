@@ -1,55 +1,43 @@
-@media screen and (min-width: 0px) {
+@media screen and (max-width: 522px) {
+
 	.logo {
-		max-width: 260px;
+		    max-width: 250px;
+	}
+
+	h1 {
+		max-width: 280px;
+		display: block;
+		margin: 0 auto;
 	}
 
 	.text-field {
-		width: 100%;
+			padding: 15px;
+			width: 300px;
+			display: block;
+			margin: 0 auto;
+			position: relative;
 	}
 
 	.primary-btn {
-		width: 40%;
-		float: right;
-		margin-top: 10px;
-		position: relative;
-		z-index: 9999999;
-		bottom: 62px;
+			width: 200px;
+			display: block;
+			margin: 10px auto;
+			bottom: 156px;
+			right: 10px;
 	}
-
-	form {
-    	padding: 0px 9px;
-    }
 
 	footer p {
-    	font-size: 1.2em; 
-    	font-weight: bold;
-	}
+    font-size: 13px;
+    font-weight: bold;
 }
 
-@media screen and (min-width: 768px) {
-	.logo {
-		max-width: 300px;
-	}
+}
 
-	.text-field {
-		width: 400px;
-	}
 
-	.primary-btn {
-		width: 30%;
-		float: right;
-		margin-top: 10px;
-		position: relative;
-		z-index: 9999999;
-		bottom: 62px;
-	}
-
-	form {
-    	padding: 0px 9px;
-    }
-
-	footer p {
-    	font-size: 1.2em; 
-    	font-weight: bold;
+@media screen and (min-width: 520px) {
+	h1 {
+		max-width: 320px;
+		display: block;
+		margin: 0 auto;
 	}
 }
