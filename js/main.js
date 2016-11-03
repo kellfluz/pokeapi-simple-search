@@ -53,4 +53,13 @@
       searchField.reset;
     }
 
+   var $a = document.querySelector('a');
+   $a.addEventListener('click', callbackLink, false);
+
+   function callbackLink ( event ) {
+     event.preventDefault();//todo link tem o comportamento de submeter....
+     alert('boom!');
+   }
+
+
 })();
