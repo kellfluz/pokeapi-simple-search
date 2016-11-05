@@ -1,10 +1,15 @@
+PARTE 01 (GITHUB)
  Criar um repo no GH com nome: pokeapi-simple-search
 - Você irá criar um pequeno projeto que vai utilizar a mesma API que usamos porém ao invés de pequisar pelo número, vamos pesquisar pelo nome do Pokémon
+
+PARTE 02 (HTML E CSS)
 - Sua aplicação terá que ter:
  - Conteúdo todo centralizado na tela
  - Um título: "Procure informações de seu Pokémon favorito!"
  - Um input de texto para que o usuário digite o nome do Pokémon
  - Um botão pesquisar
+
+PARTE 03 (JS)
 - Como sua aplicação deve funcionar:
  - O botão de pesquisa deve ficar desabilitado até o usuário digitar pelo menos três caracteres que não seja espaço
  - Ao clicar no botão pesquisar deve enviar um request para a API com o nome digitado no input
@@ -18,11 +23,11 @@
  - Uma pasta js com arquivo(s) js
  - Uma pasta img com imagem(ns) caso queira
 
-[4:49]  
+[4:49]
 Qualquer dúvida me fale
 
-[4:50]  
+[4:50]
 ao terminar esse projeto vc terá uma aplicação bem legal funcionando
 
-[4:50]  
+[4:50]
 quando terminar iremos colocar ela online usando o Heroku
