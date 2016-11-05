@@ -1,28 +1,33 @@
-(function() {
+(function(doc, win) {
     'use strict';
 
-    var searchField = document.getElementById('search');
-    var button = document.getElementById('btn');
+    var $searchField = doc.getElementById('search');
+    var $button = doc.getElementById('button');
+    var b = doc.querySelector('body');
 
-    searchField.addEventListener('input', validateField);
-    button.addEventListener('click', function() {
-        seekPokemon();
-        desabilitarButton();
-        //outra função
+    var $name = doc.getElementById('name');
+    var $id = doc.getElementById('id');
+    var $experience = doc.getElementById('experience');
+    var $height = doc.getElementById('height');
+
+    $searchField.addEventListener('input', validateField);
+    $button.addEventListener('click', function() {
+    seekPokemon();
     }, false);
 
-    function validateField(e) {
-      var enteredValue = searchField.value.trim();
+    function validateField() {
+      var enteredValue = $searchField.value.trim();
 
       if (enteredValue.length >= 2) {
-          button.disabled = false;
-          button.style.background = "#1e275b";
-          button.style.color = "#fff";
+        button.disabled = false;
+        button.style.background = "#1e275b";
+        button.style.color = "#fff";
       }
+
     }
 
     function seekPokemon() {
-      var enteredValue = searchField.value.trim();
+      var enteredValue = $searchField.value.trim();
       var urlApi = 'http://pokeapi.co/api/v2/pokemon/' + enteredValue;
 
       //rest API
@@ -34,6 +39,9 @@
         if (requestApi.readyState === 4 && requestApi.status === 200) {
 
           var response = JSON.parse(requestApi.responseText);
+
+          console.log(response.length);
+          $name.innerHTML = response.name;
           alert("Name → " + response.name);
           alert("ID → " + response.id);
           alert("Experiência → " + response.base_experience);
@@ -46,20 +54,7 @@
         }
 
       }
+
     }
 
-    function desabilitarButton() {
-      button.disabled = true;
-      searchField.reset;
-    }
-
-   var $a = document.querySelector('a');
-   $a.addEventListener('click', callbackLink, false);
-
-   function callbackLink ( event ) {
-     event.preventDefault();//todo link tem o comportamento de submeter....
-     alert('boom!');
-   }
-
-
-})();
+})(document, window);

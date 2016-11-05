@@ -18,8 +18,6 @@
 
   }
 
-
-
   //funções para add eventos
   function addEvents(element, event, callback) {
     doc.querySelector(element).

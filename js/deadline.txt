@@ -17,6 +17,10 @@ PARTE 03 (JS)
  - Se não existir o pokemon procurado vc deve mostrar um alerta para o usuário informando que o pokémon procurado não existe
 -  Tecnologias que vc poderá usar:
  - HTML 5, CSS 3, JavaScript (sem usar nenhuma biblioteca ou framework)
+
+
+
+ PARTE 05 ESTRUTURA DIRETPRIOS
 - Estrutura de diretório do projeto:
  - Um arquivo index.html
  - Uma pasta css com arquivo(s) css
