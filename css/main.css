@@ -40,7 +40,6 @@
 	color: #1d3c73;
 }
 
-
 .search {
     display: flex;
     justify-content: center;
@@ -56,6 +55,16 @@
     max-width: 690px;
     display: block;
     margin: 50px auto;
+}
+
+/*table*/
+table, th, td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 6px;
+    margin: 44px auto;
+    width: 43%;
+    border-spacing: 5px;
 }
 
 footer {
