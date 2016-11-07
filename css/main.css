@@ -49,10 +49,14 @@
     height: 50px;
 }
 
+#viewResultSearch {
+    height: 300px;
+
+}
+
 .results {
     height: auto;
-    background: white;
-    max-width: 690px;
+    
     display: block;
     margin: 50px auto;
 }
