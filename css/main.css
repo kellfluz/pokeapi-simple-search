@@ -13,13 +13,9 @@
 	margin: auto;
 }
 
-.head {
-    padding-bottom: 50px;
-}
+.head { padding-bottom: 50px; }
 
-.primary-title {
-	font-family: 'Arvo', serif;
-}
+.primary-title { font-family: 'Arvo', serif; }
 
 .text-field {
 	padding: 15px;
@@ -49,14 +45,10 @@
     height: 50px;
 }
 
-#viewResultSearch {
-    height: 300px;
-
-}
+#viewResultSearch { height: 300px; }
 
 .results {
     height: auto;
-    
     display: block;
     margin: 50px auto;
 }
@@ -75,8 +67,7 @@ footer {
 	display: block;
 	margin:0 auto;
 	display: flex;
-    justify-content: center;
-
+  justify-content: center;
 }
 
 footer p {
@@ -85,12 +76,9 @@ footer p {
     text-align: center;
 }
 
-
 footer a {
 	text-decoration: none;
 	color: #fdbf0c;
 }
 
-footer a:hover {
-    text-decoration: underline;
-}
+footer a:hover { text-decoration: underline; }

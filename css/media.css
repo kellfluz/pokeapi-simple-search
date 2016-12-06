@@ -1,8 +1,6 @@
 @media screen and (max-width: 522px) {
 
-	.logo {
-		    max-width: 250px;
-	}
+	.logo { max-width: 250px; }
 
 	h1 {
 		max-width: 280px;

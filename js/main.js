@@ -1,8 +1,6 @@
 (function(doc, win) {
     'use strict';
 
-
-    var fragmentProject = doc.createDocumentFragment();
     var $searchField = doc.getElementById('search');
     var $button = doc.getElementById('button');
     var b = doc.querySelector('body');
