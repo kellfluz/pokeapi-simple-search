@@ -1,27 +1,19 @@
-# pokeapi-simple-search
+# Sistema de consumo da API do Pokemón
 
 #### 1ª Tarefa
 
-Criar tarefa de habilitar botão de pesquisa ao digitar.
+última atualizaçao deste projeto foi em 07/12/2016. As seguintes funcionalidades foram aplicadas.
 
-:white_medium_square: Criar a IIFE;
+Instalação e configuração do Gulp :heavy_check_mark:
 
-:white_medium_square: Declarar o modo use strict;
+Plugins adicionados
 
-:white_medium_square: Pegar o campo de pesquisa;
+[browsersyn](https://www.browsersync.io/)
+[recess](http://twitter.github.io/recess/)
 
-:white_medium_square: Adicionar evento change ao campo pesquisa;
+Mockup home
 
-:white_medium_square: Criar função para exibir as alterações;
+Foi criado e disponibilizado um Mockup de Rascunho inicial da página home.
 
-<blockquote>
-	Tarefa concluída :heavy_check_mark:
-</blockquote>	
-
-#### 2ª Tarefa
-
-:white_medium_square: Fazer request ao click no botão de procura;
-
-:white_medium_square: Retornar as informações do Pokemón favorito e exibir no console;
 
 
