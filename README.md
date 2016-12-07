@@ -18,4 +18,16 @@ Foi criado e disponibilizado um Mockup de Rascunho inicial da página home. :hea
 ![Mockup da home](https://raw.githubusercontent.com/DaniloAgostinho/pokeapi-simple-search/master/mockups/home.png)
 
 
+## Dependências
+
+Gulp Global
+- npm install --global gulp-cli
+- npm init
+- npm install --save-dev gulp
+
+## Comandos do Gulp
+
+- gulp s (server)
+
+
 
