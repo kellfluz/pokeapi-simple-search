@@ -15,5 +15,7 @@ Mockup home
 
 Foi criado e disponibilizado um Mockup de Rascunho inicial da página home. :heavy_check_mark:
 
+![Mockup da home](https://raw.githubusercontent.com/DaniloAgostinho/pokeapi-simple-search/master/mockups/home.png)
+
 
 
