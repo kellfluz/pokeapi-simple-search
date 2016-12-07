@@ -1,0 +1,59 @@
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	font-size: 12px;
+	color: #fff;
+}
+.page {
+	max-width: 100%;
+	padding: 15px;
+	background: #333;
+	margin: 0 auto;
+}
+.clearfix:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+.cols {
+	float: left;
+}
+.cols-12 {
+	width: 8.33%;
+}
+.cols-12-5x {
+	width: 41.65%;
+}
+.cols-6 {
+	width: 16.66%;
+}
+
+.cols-6-3x {
+	width: 50%;
+}
+.cols-6-5x {
+	width: 83.3%;
+}
+
+.cols-3 {
+	width: 33.33%;
+}
+.cols-3-2x {
+	width: 66.64%;
+}
+
+.content {
+	background: #3facd6;
+	padding: 0;
+	margin: 15px;
+	padding: 15px;
+}
