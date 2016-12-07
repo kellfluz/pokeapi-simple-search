@@ -2,7 +2,7 @@
 
 #### 1ª Tarefa
 
-última atualizaçao deste projeto foi em 07/12/2016. As seguintes funcionalidades foram aplicadas.
+Última atualizaçao 08/12/2016. As seguintes funcionalidades foram aplicadas.
 
 Instalação e configuração do Gulp :heavy_check_mark:
 
@@ -29,5 +29,7 @@ Gulp Global
 
 - gulp s (server)
 
+## Flexbox
+estruturado com flexbox
 
 
