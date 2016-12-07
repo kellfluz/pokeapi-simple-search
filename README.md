@@ -8,12 +8,12 @@ Instalação e configuração do Gulp :heavy_check_mark:
 
 Plugins adicionados
 
-[browsersyn](https://www.browsersync.io/)
-[recess](http://twitter.github.io/recess/)
+[browsersyn](https://www.browsersync.io/) :heavy_check_mark:
+[recess](http://twitter.github.io/recess/) :heavy_check_mark:
 
 Mockup home
 
-Foi criado e disponibilizado um Mockup de Rascunho inicial da página home.
+Foi criado e disponibilizado um Mockup de Rascunho inicial da página home. :heavy_check_mark:
 
 
 
