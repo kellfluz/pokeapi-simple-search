@@ -16,8 +16,8 @@
 
     function clearSearch() {
         $button.disabled = true;
-        $button.style.background = "#fff";
-        $button.style.color = "#1d3c73";
+        // $button.style.background = "#fff";
+        // $button.style.color = "#1d3c73";
         $searchField.value = '';
     }
 
@@ -28,8 +28,8 @@
       function styleForm() {
         if (enteredValue.length >= 2) {
             $button.disabled = false;
-            $button.style.background = "#1e275b";
-            $button.style.color = "#fff";
+            // $button.style.background = "#1e275b";
+            // $button.style.color = "#fff";
         } else if (enteredValue.length == 0) {
           clearSearch();
         }

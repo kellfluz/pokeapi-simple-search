@@ -31,7 +31,7 @@ body {
     padding: 10px;
     width: calc(100% - 90px);
     font-size: 16px;
-    /*border: 1px solid #666;*/
+    border: 1px solid #666;
     /* display: block; */
 }
 
@@ -47,6 +47,6 @@ body {
 
 .primary-btn[disabled] {
   background: transparent;
-  color: #666;
+  color: #ddd;
   border-color: #666;
 }
