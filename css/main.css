@@ -8,6 +8,21 @@ body {
   font-family: 'Arvo', serif;
 }
 
+p {
+    text-align: center;
+    margin: 23px;
+    font-size: 14px;
+}
+
+.primary-title{
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+
 .container {
   display: flex; /* or inline-flex */
   flex-direction: row;
@@ -25,6 +40,8 @@ body {
 
 .logo {
     max-width: 300px;
+    display: block;
+    margin: 0 auto;
 }
 
 .text-field {
@@ -49,4 +66,8 @@ body {
   background: transparent;
   color: #666;
   border-color: #666;
+}
+
+.form-control {
+    width: 600px;
 }

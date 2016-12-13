@@ -31,6 +31,7 @@
             // $button.style.background = "#1e275b";
             // $button.style.color = "#fff";
         } else if (enteredValue.length == 0) {
+
           clearSearch();
         }
       }
